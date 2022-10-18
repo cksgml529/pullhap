@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>form 연습</title>
+</head>
+<body>
+    <h1>form 연습</h1>
+
+    <form>
+       <fieldset>
+        <legend>개인정보</legend>
+       
+       <section>
+        <label for="u_name">이름 : </label>
+       <input type="text" name="userName" id="u_name" maxlength="5" minlength="2" placeholder="이름을 입력해주세요">
+       <br>
+
+        <label for="email">이메일 : </label>
+        <input type="email" name="email" id="email" placeholder="이메일을 입력해주세요">
+        <br>
+
+    </section>
+    </fieldset>
+    <br>
+    <fieldset>
+        <section>
+        <input type="radio" name="choice1" checked >선택1
+        <input type="radio" name="choice1" >선택2
+        <input type="radio" name="choice1" >선택3
+        <input type="radio" name="choice1" disabled >선택4
+        <br>
+    </section>
+
+    <section>
+        <textarea name="txtbox" id="txtbox1" cols="30" rows="10" placeholder="내용을 입력해주세요"></textarea>
+        <br>
+    </section>
+
+    <section>
+        <select name="menu" >
+            <option value="adv">광고</option>
+            <option value="욕설">욕설</option>
+            <option value="비방">비방</option>
+
+        </select>
+        <br>
+    </section>
+
+    <section>
+        <input type="checkbox" name="box" value="선택1">선택1
+        <input type="checkbox" name="box" value="선택2">선택2
+        <input type="checkbox" name="box" value="선택3" checked>선택3
+        <input type="checkbox" name="box" value="선택4">선택4
+        <br>
+    </section>
+    
+        <button type="submit">제출하기</button>
+        <button type="reset">초기화</button>
+    </fieldset>
+        
+
+    </form>
+</body>
+</html>
