@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>table style ex1</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        table{
+            margin: 0 auto;
+            width: 700px;
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+        table .t1 ~ tr td,th {
+            border: 3px solid #000;
+           
+        }
+        table th{
+            color: #fff;
+            background-color: #f54862;
+        }
+        table #time {
+            background-color: #000;
+            border: 3px solid red;
+            border-radius: 30px 30px 0 0 ;
+        }
+    </style>
+</head>
+<body>
+    <h1>table style 연습 1</h1>
+
+    <table>
+        <tr class="t1">
+            <th colspan="6" id="time">시간표</th>
+            
+        </tr>
+        <tr class="t2">
+            <th>구분</th>
+            <th>월요일</th>
+            <th>화요일</th>
+            <th>수요일</th>
+            <th>목요일</th>
+            <th>금요일</th>
+        </tr>
+        <tr class="t3">
+            <th>1교시</th>
+            <td rowspan="2">기초드로잉</td>
+            <td rowspan="2">색채학</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="t4">
+            <th>2교시</th>
+            <td rowspan="3">html</td>
+            <td></td>
+            <td rowspan="2">포트폴리오제작</td>
+        </tr>
+        <tr class="t5">
+            <th>3교시</th>
+            <td></td>
+            <td></td>
+            <td></td>
+           
+            
+        </tr>
+        <tr class="t6">
+            <th>4교시</th>
+            <td rowspan="2">포토그래픽</td>
+            <td></td>
+            <td rowspan="2">구성요소제작</td>
+            <td></td>
+          
+        </tr>
+        <tr class="t7">
+            <th>5교시</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+           
+        </tr>
+
+    </table>
+</body>
+</html>
